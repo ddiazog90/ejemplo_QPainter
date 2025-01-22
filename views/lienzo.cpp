@@ -4,6 +4,9 @@ lienzo::lienzo() {}
 
 void lienzo::paintEvent(QPaintEvent *e){
     QPainter g(this);
+    QString ruta="D:/tempfiles/fondos/"+fondo;
+    QImage fondo(ruta);
+    g.drawImage(10,10,fondo);
     g.setPen(Qt::blue);
     g.setBrush(Qt::cyan);
     g.rotate(rotate);
@@ -19,5 +22,9 @@ void lienzo::setY(int &y_){
 }
 void lienzo::setRotate(int &r){
     this->rotate=r;
+    repaint();
+}
+void lienzo::setFondo(QString& fondo_){
+    this->fondo=fondo_;
     repaint();
 }

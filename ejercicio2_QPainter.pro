@@ -10,10 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    sources/imageLienzo.cpp \
+    sources/logicImages.cpp \
     views/lienzo.cpp \
     widget.cpp
 
 HEADERS += \
+    headers/imageLienzo.h \
+    headers/logicImages.h \
     views/lienzo.h \
     widget.h
 

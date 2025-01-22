@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>274</width>
+    <width>199</width>
     <height>260</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>231</width>
+     <width>171</width>
      <height>251</height>
     </rect>
    </property>
@@ -27,11 +27,18 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>211</width>
-      <height>221</height>
+      <width>151</width>
+      <height>242</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_reinicar">
+       <property name="text">
+        <string>REINICIAR</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="btn_move">
        <property name="text">
@@ -45,6 +52,37 @@
         <string>ROTAR</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Eje X:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="sp_ejeX"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>EJE Y:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="sp_ejeY"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cmb_fondo"/>
      </item>
      <item>
       <widget class="QPushButton" name="btn_scale">
